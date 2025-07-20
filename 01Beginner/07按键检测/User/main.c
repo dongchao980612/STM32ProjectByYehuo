@@ -6,8 +6,9 @@
 int main(void)
 {
 	
-	Led_Init();
-	Key_Init();
+	LED_GPIO_Config();
+	KEY_GPIO_Config();
+	
 	while (1)
 		{
 			if(Get_Key_Value(KEY_GPIO_PORT,KEY_GPIO_PIN) == KEY_UP){

@@ -6,8 +6,12 @@
 int main(void)
 {
 	
-	Led_Init();
+	LED_GPIO_Config();
 	
+	// GPIO_SetBits(LED_GPIO_PORT,LED_GPIO_PIN); // ¹Ø±ÕLED
+	// GPIO_ResetBits(LED_GPIO_PORT,LED_GPIO_PIN);// ´ò¿ªLED
+
+
 	while (1)
 		{
 			// LED_ON();
@@ -19,3 +23,4 @@ int main(void)
 			Delay(0xFFFFF);
     }
 }
+	
