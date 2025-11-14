@@ -5,22 +5,22 @@
 
 int main(void)
 {
-	
-	LED_GPIO_Config();
-	
-	// GPIO_SetBits(LED_GPIO_PORT,LED_GPIO_PIN); // 关闭LED
-	// GPIO_ResetBits(LED_GPIO_PORT,LED_GPIO_PIN);// 打开LED
+
+    LED_GPIO_Config();
+
+    // GPIO_SetBits(LED_GPIO_PORT,LED_GPIO_PIN); // 关闭LED
+    // GPIO_ResetBits(LED_GPIO_PORT,LED_GPIO_PIN);// 打开LED
 
 
-	while (1)
-		{
-			// LED_ON();
-			LED(ON);
-			Delay(0xFFFFF);
-			
-			// LED_OFF();
-			LED(OFF);
-			Delay(0xFFFFF);
+    while (1)
+    {
+        // LED_ON();
+        LED(ON);
+        Delay(0xFFFFF);
+
+        // LED_OFF();
+        LED(OFF);
+        Delay(0xFFFFF);
     }
 }
-	
+
