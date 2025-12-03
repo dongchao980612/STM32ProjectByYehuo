@@ -4,28 +4,28 @@
 typedef unsigned int uint32_t;
 typedef unsigned short uint16_t;
 
-// 外设
-#define PERIPH_BASE ((uint32_t *)0x40000000)
+//  Periph
+#define PERIPH_BASE           ((uint32_t)0x40000000)
 
-// 总线
-#define APB1PERIPH_BASE PERIPH_BASE
-#define APB2PERIPH_BASE (PERIPH_BASE + 0x10000)
-#define AHBPERIPH_BASE (PERIPH_BASE + 0x20000)
+#define APB1PERIPH_BASE       PERIPH_BASE
+#define APB2PERIPH_BASE       (PERIPH_BASE + 0x10000)
+#define AHBPERIPH_BASE        (PERIPH_BASE + 0x20000)
 
 // RCC
-#define RCC_BASE (AHBPERIPH_BASE + 0x1000)
+#define RCC_BASE              (AHBPERIPH_BASE + 0x1000)
 
-// GPIOB
-#define GPIOB_BASE (APB2PERIPH_BASE + 0x0C00)
 
-// RCC_APB2ENR
-#define RCC_APB2ENR (*(uint32_t *)(RCC_BASE + 0x18))
+// GPIO
+#define GPIOB_BASE            (APB2PERIPH_BASE + 0x0C00)
+#define GPIOE_BASE            (APB2PERIPH_BASE + 0x1800)
 
 
 
 typedef enum {DISABLE = 0, ENABLE = !DISABLE} FunctionalState;
 
-
+/** 
+  * @brief General Purpose I/O
+  */
 typedef struct
 {
     uint32_t CRL;
@@ -37,6 +37,10 @@ typedef struct
     uint32_t LCKR;
 } GPIO_TypeDef;
 
+
+/** 
+  * @brief Reset and Clock Control
+  */
 typedef struct
 {
     uint32_t CR;
@@ -52,7 +56,12 @@ typedef struct
 
 } RCC_TypeDef;
 
+
+
 #define GPIOB ((GPIO_TypeDef *)GPIOB_BASE)
+#define GPIOE ((GPIO_TypeDef *)GPIOE_BASE)
+
 #define RCC ((RCC_TypeDef *)RCC_BASE)
+
 
 #endif /* __STM32F10x_H */

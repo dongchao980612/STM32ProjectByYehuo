@@ -2,14 +2,20 @@
 
 
 void  SystemInit(void);
-	
 
-int main(){
-	
-	
-	
+
+int main(void)
+{
+
+    while(1)
+    {
+
+
+    }
 }
 
-void  SystemInit(void){
-	
+
+void  SystemInit(void)
+{
+
 }

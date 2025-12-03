@@ -1,3 +1,0 @@
-Dependencies for Project 'project', Target 'Porject': (DO NOT MODIFY !)
-F (.\main.c)(0x6901D0EF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\_Porject-ID:\Keil_v5_MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5_MDK\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (stm32f10x.h)(0x6901D217)
