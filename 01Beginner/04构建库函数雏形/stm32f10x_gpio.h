@@ -25,9 +25,9 @@ typedef enum
 
 typedef struct
 {
-	uint16_t GPIO_Pin;
-  GPIOSpeed_TypeDef GPIO_Speed;  
-  GPIOMode_TypeDef GPIO_Mode;   
+    uint16_t GPIO_Pin;
+    GPIOSpeed_TypeDef GPIO_Speed;  
+    GPIOMode_TypeDef GPIO_Mode;   
 }GPIO_InitTypeDef;
 
 
